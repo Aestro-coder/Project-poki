@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Poki Clone-Play Online Games For Free</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico.webp">
+        <link rel="stylesheet" href="game.css">
+    </head>
+    <body>
+        <main class="container">
+            <div class="home">
+                <img class="logo" src="Poki_logo.svg" alt="Poki Logo" loading="lazy">
+                <div class="icon">
+                    <div class="border hove">
+                        <img  class="si" src="Home-2.ico" alt="Home Icon" loading="lazy">
+                    </div>
+                    <div class="border hov">
+                        <img  class="si" src="Search-2.ico" alt="Search Icon" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="extra"></div>
+            <div class="game">
+                <div class="error"></div>
+                <div class="info">
+                    <div class="loader">
+                        <div class="box"></div>
+                        <div class="texto">
+                            <span class="fade"></span>
+                            <span class="fade-t"></span>                           
+                            <svg class="like emoji" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                <path d="M7.493 18.5c-.425 0-.82-.236-.975-.632A7.48 7.48 0 0 1 6 15.125c0-1.75.599-3.358 1.602-4.634.151-.192.373-.309.6-.397.473-.183.89-.514 1.212-.924a9.042 9.042 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75A.75.75 0 0 1 15 2a2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23h-.777ZM2.331 10.727a11.969 11.969 0 0 0-.831 4.398 12 12 0 0 0 .52 3.507C2.28 19.482 3.105 20 3.994 20H4.9c.445 0 .72-.498.523-.898a8.963 8.963 0 0 1-.924-3.977c0-1.708.476-3.305 1.302-4.666.245-.403-.028-.959-.5-.959H4.25c-.832 0-1.612.453-1.918 1.227Z" />
+                            </svg>
+                            <svg class="dislike emoji" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                <path d="M15.73 5.5h1.035A7.465 7.465 0 0 1 18 9.625a7.465 7.465 0 0 1-1.235 4.125h-.148c-.806 0-1.534.446-2.031 1.08a9.04 9.04 0 0 1-2.861 2.4c-.723.384-1.35.956-1.653 1.715a4.499 4.499 0 0 0-.322 1.672v.633A.75.75 0 0 1 9 22a2.25 2.25 0 0 1-2.25-2.25c0-1.152.26-2.243.723-3.218.266-.558-.107-1.282-.725-1.282H3.622c-1.026 0-1.945-.694-2.054-1.715A12.137 12.137 0 0 1 1.5 12.25c0-2.848.992-5.464 2.649-7.521C4.537 4.247 5.136 4 5.754 4H9.77a4.5 4.5 0 0 1 1.423.23l3.114 1.04a4.5 4.5 0 0 0 1.423.23ZM21.669 14.023c.536-1.362.831-2.845.831-4.398 0-1.22-.182-2.398-.52-3.507-.26-.85-1.084-1.368-1.973-1.368H19.1c-.445 0-.72.498-.523.898.591 1.2.924 2.55.924 3.977a8.958 8.958 0 0 1-1.302 4.666c-.245.403.028.959.5.959h1.053c.832 0 1.612-.453 1.918-1.227Z" />
+                            </svg> 
+                            <svg class="bug emoji" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                <path fillRule="evenodd" d="M3 2.25a.75.75 0 0 1 .75.75v.54l1.838-.46a9.75 9.75 0 0 1 6.725.738l.108.054A8.25 8.25 0 0 0 18 4.524l3.11-.732a.75.75 0 0 1 .917.81 47.784 47.784 0 0 0 .005 10.337.75.75 0 0 1-.574.812l-3.114.733a9.75 9.75 0 0 1-6.594-.77l-.108-.054a8.25 8.25 0 0 0-5.69-.625l-2.202.55V21a.75.75 0 0 1-1.5 0V3A.75.75 0 0 1 3 2.25Z" clipRule="evenodd" />
+                            </svg>
+                            <svg class="full emoji" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                <path fillRule="evenodd" d="M15 3.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0V5.56l-3.97 3.97a.75.75 0 1 1-1.06-1.06l3.97-3.97h-2.69a.75.75 0 0 1-.75-.75Zm-12 0A.75.75 0 0 1 3.75 3h4.5a.75.75 0 0 1 0 1.5H5.56l3.97 3.97a.75.75 0 0 1-1.06 1.06L4.5 5.56v2.69a.75.75 0 0 1-1.5 0v-4.5Zm11.47 11.78a.75.75 0 1 1 1.06-1.06l3.97 3.97v-2.69a.75.75 0 0 1 1.5 0v4.5a.75.75 0 0 1-.75.75h-4.5a.75.75 0 0 1 0-1.5h2.69l-3.97-3.97Zm-4.94-1.06a.75.75 0 0 1 0 1.06L5.56 19.5h2.69a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 1 1.5 0v2.69l3.97-3.97a.75.75 0 0 1 1.06 0Z" clipRule="evenodd" />
+                            </svg>                        
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="ad">ADVERTISEMENT</div>
+            <div class="ad2">ADVERTISEMENT</div> 
+            <a href="game.html" loding="lazy" class="fish small"><span class="text"><b>Fish Eat Fish</b></span></a>
+            <a href="game.html" loding="lazy" class="monster medium"><span class="text"><b>Drive Mad</b></span></a>
+            <a href="game.html" loding="lazy" class="block medium"><span class="text"><b>Blocky Blast Puzzle</b></span></a>
+            <a href="game.html" loding="lazy" class="f-c medium"><span class="text"><b>Rocket Soccer Derby</b></span></a>
+            <a href="game.html" loding="lazy" class="lambo medium"><span class="text"><b>MR RACER - car racing</b></span></a>
+            <a href="game.html" loding="lazy" class="zombie small"><span class="text"><b>Stupid Zombies</b></span></a>
+            <a href="game.html" loding="lazy" class="temple small"><span class="text"><b>Temple Run 2</b></span></a>
+            <a href="game.html" loding="lazy" class="gun-m small"><span class="text"><b>Combat Online</b></span></a>
+            <a href="game.html" loding="lazy" class="r-s-m small"><span class="text"><b>Stickman Hook</b></span></a>
+            <a href="game.html" loding="lazy" class="f-t small"><span class="text"><b>Off-Road Rain Cargo Simulator</b></span></a>
+            <a href="game.html" loding="lazy" class="granny small"><span class="text"><b>Prankster 3D</b></span></a>
+            <a href="game.html" loding="lazy" class="m-chess medium"><span class="text"><b>Master Chess</b></span></a>
+            <a href="game.html" loding="lazy" class="red-ball small"><span class="text"><b>Red Ball 4</b></span></a>
+            <a href="game.html" loding="lazy" class="b-post small"><span class="text"><b>BlockPost</b></span></a>
+            <a href="game.html" loding="lazy" class="cricket small"><span class="text"><b>Cricket World Cup</b></span></a>
+            <a href="game.html" loding="lazy" class="g-tank small"><span class="text"><b>Hills Of Steel</b></span></a>
+            <a href="game.html" loding="lazy" class="goku small"><span class="text"><b>Stickman Dragon Fight</b></span></a>
+            <a href="game.html" loding="lazy" class="wild-d small"><span class="text"><b>Disaster Arena</b></span></a>
+            <a href="game.html" loding="lazy" class="nuts medium"><span class="text"><b>Nut and Bolts: Screwing Puzzle</b></span></a>
+            <a href="game.html" loding="lazy" class="r-light small"><span class="text"><b>Sprint League</b></span></a>
+            <a href="game.html" loding="lazy" class="g-gunman small"><span class="text"><b>Kour.io</b></span></a>
+            <a href="game.html" loding="lazy" class="monkey medium"><span class="text"><b>Monkey Mart</b></span></a>
+            <a href="game.html" loding="lazy" class="c-chess small"><span class="text"><b>Casual Chess</b></span></a>
+            <a href="game.html" loding="lazy" class="red-car small"><span class="text"><b>Blaze Drifter</b></span></a>
+            <a href="game.html" loding="lazy" class="i-man small"><span class="text"><b>Ragdoll Hit</b></span></a>
+            <a href="game.html" loding="lazy" class="test-cricket small"><span class="text"><b>Little Master Cricket</b></span></a>
+            <a href="game.html" loding="lazy" class="hair-s small"><span class="text"><b>Funny Hair Salon</b></span></a>
+            <a href="game.html" loding="lazy" class="fruit medium"><span class="text"><b>Fruit Ninja</b></span></a>
+            <a href="game.html" loding="lazy" class="pool small"><span class="text"><b>Pool Club</b></span></a>
+            <a href="game.html" loding="lazy" class="b-worm small"><span class="text"><b>Snake vs Worm</b></span></a>
+            <a href="game.html" loding="lazy" class="two small"><span class="text"><b>2048</b></span></a>
+            <a href="game.html" loding="lazy" class="b-dragon small"><span class="text"><b>Dragon Simulator 3D</b></span></a>
+            <a href="game.html" loding="lazy" class="buddy small"><span class="text"><b>Puppet Master</b></span></a>
+            <a href="game.html" loding="lazy" class="level small"><span class="text"><b>Level Devil</b></span></a>
+            <a href="game.html" loding="lazy" class="kung-fu small"><span class="text"><b>Karate Fighter</b></span></a>
+            <a href="game.html" loding="lazy" class="stunt medium"><span class="text"><b>Moto X3M</b></span></a>
+            <a href="game.html" loding="lazy" class="word small"><span class="text"><b>Word City Crossed</b></span></a>
+            <a href="game.html" loding="lazy" class="f1 small"><span class="text"><b>Super Star Car</b></span></a>
+            <a href="game.html" loding="lazy" class="w-i-lying small"><span class="text"><b>Who Is?</b></span></a>
+            <a href="game.html" loding="lazy" class="c-superstar small"><span class="text"><b>Cricket Superstar</b></span></a>
+            <a href="game.html" loding="lazy" class="bycycle small"><span class="text"><b>Rainbow Obby</b></span></a>
+            <a href="game.html" loding="lazy" class="plus small"><span class="text"><b>ArithmeticA</b></span></a>
+            <a href="game.html" loding="lazy" class="mine small"><span class="text"><b>Idle Mining Empire</b></span></a>
+            <a href="game.html" loding="lazy" class="rich-w small"><span class="text"><b>Snake.Is MLG Edition</b></span></a>
+            <a href="game.html" loding="lazy" class="runner small"><span class="text"><b>Athletics Hero</b></span></a>
+            <a href="game.html" loding="lazy" class="quiz small"><span class="text"><b>Brain Test All-Star</b></span></a>
+            <a href="game.html" loding="lazy" class="sniper small"><span class="text"><b>Lethal Sniper 3D: Army Soldier</b></span></a>
+            <a href="game.html" loding="lazy" class="crying small"><span class="text"><b>Car Machines</b></span></a>
+            <a href="game.html" loding="lazy" class="sushi-w small"><span class="text"><b>Sushi Party</b></span></a>
+            <a href="game.html" loding="lazy" class="warrior small"><span class="text"><b>Merge Arena</b></span></a>
+            <a href="game.html" loding="lazy" class="ice-cream small"><span class="text"><b>Merge Summer</b></span></a>
+            <a href="game.html" loding="lazy" class="agent small"><span class="text"><b>Mr Bullet</b></span></a>
+            <a href="game.html" loding="lazy" class="ludo small"><span class="text"><b>Ludo Multiplayer</b></span></a>
+            <a href="game.html" loding="lazy" class="girl small"><span class="text"><b>Glam Girl: Dress Up and Makeover</b></span></a>
+            <a href="game.html" loding="lazy" class="pencil small"><span class="text"><b>Color Pencil Run</b></span> </a>
+            <a href="game.html" loding="lazy" class="vectaria small"><span class="text"><b>Vectaria.io</b></span></a>
+            <a href="game.html" loding="lazy" class="r-b small"><span class="text"><b>Stunt Bike Extreme</b></span></a>
+            <a href="game.html" loding="lazy" class="goku small"><span class="text"><b>Stickman Dragon Fight</b></span></a>
+            <a href="game.html" loding="lazy" class="block small"><span class="text"><b>Block Post</b></span></a>
+        </main>
+        <div class="section">
+            <div class="archery-g option2">
+                <span class="tittle2">ARCHERY GAMES</span>
+            </div>
+            <div class="football-g option2">
+                <span class="tittle2">PENALTY GAMES</span>
+            </div>
+            <div class="tower-g option2">
+                <span class="tittle2">TOWER DEFENSE GAMES</span>
+            </div>
+            <div class="card-g option2">
+                <span class="tittle2">CARD GAMES</span>
+            </div>
+            <div class="threeD-g option2">
+                <span class="tittle2">3D GAMES</span>
+            </div>
+            <div class="mobile-g option2">
+                <span class="tittle2">APP STORE GAMES</span>
+            </div>
+            <div class="clicker-g option2">
+                <span class="tittle2">CLICKER GAMES</span>
+            </div>
+            <div class="ninja-g option2">
+                <span class="tittle2">NINJA GAMES</span>
+            </div>
+            <div class="puzzle-g option2">
+                <span class="tittle2">MAZE GAMES</span>
+            </div>
+            <div class="board-g option2">
+                <span class="tittle2">CHEKERS GAMES</span>
+            </div>
+            <div class="typing-g option2">
+                <span class="tittle2">KEYBOARD GAMES</span>
+            </div>
+            <div class="truck-g option2">
+                <span class="tittle2">TRUCK GAMES</span>
+            </div>
+        </div>
+        <div class="article">
+            <h6>POKI CLONE ONLINE GAMES</h6>
+            <h3>Free Online Games</h3>
+            <p>Poki has the best free online games selection and offers the most fun experience to play alone or with friends. We offer instant play to all our games without downloads, login, popups or other distractions. Our games are playable on desktop, tablet and mobile so you can enjoy them at home or on the road. Every month over 90 million gamers from all over the world play their favorite games on Poki.</p>
+            <h4>How to play games on Poki?</h4>
+            <li class="play">Click on any game you want to play it will guide you how to play.</li>
+            <h4>Who created Poki Clone?</h4>
+            <p>Poki Clone is created by Astro Boy. Know more about <a class="boy" href="https://github.com/Aestro-Coder" target="blank">Aestro Coder</a></p>
+            <h4>How can I play games for free?</h4>
+            <p>You can play games for free on Poki Clone.</p>
+            <h4>Can I Poki Clone games on mobile devices and desktop?</h4>
+            <p>Poki Clone games can be played on your computer and mobile devices like phones and tablets.</p>
+            <h4>Can I play Poki Clone games with my friend</h4>
+            <p>Yes! Poki Clone games have multiplayer game so you can play it with your friends online!</p>
+            <div class="buttons">
+            <button>ADVENTURE GAMES</button>
+            <button>BLOCK GAMES</button>
+            <button>PLATFORM GAMES</button>
+            <button>ZOMBIE GAMES</button>
+            <button>MULTIPLAYER GAMES</button>
+            <button>SHOOTING GAMES</button>
+            <button>CHRISMAS GAMES</button>
+            <button>3D GAMES</button>
+            <button>FUNNY GAMES</button>
+            <button>MINCRAFT GAMES</button>
+            <button>PARKOUR GAMES</button>
+            <button>.IO GAMES</button>
+            <button>NEW GAMES</button>
+            <button>ONLINE GAMES</button>
+            <button>VIDEO GAMES</button>
+            <button>WINTER GAMES</button>
+            <button>OBBY GAMES</button>
+            <button>MOBILE GAMES</button>
+            <button>PVP GAMES</button>
+            </div>
+        </div>
+        <div class="design"></div>
+        <footer>
+            <div class="letPoki">
+                <img class="logo2" src="Poki_logo.svg" alt="Poki Logo" loading="lazy">
+                <text>Let the world play</text>
+            </div>
+            <div class="flag">
+                <img src="assets/usa.svg" alt="USA Flag" loading="lazy" height="32px">
+            </div>
+            <div class="about">
+                <ul id="second">
+                    <li class="a"><a class="a" href="">About</a></li>
+                    <li class="a"><a class="a" href="">Jobs</a></li>
+                    <li class="a"><a class="a" href="">Privacy Statement</a></li>
+                    <li class="a"><a class="a" href="">Terms of Use</a></li>
+                    <li class="a"><a class="a" href="">Contact</a></li>
+                </ul>
+                <ul id="third">
+                    <li class="a b"><a class="a" href="">Poki for Developers</a></li>
+                    <li class="a b"><a class="a" href="">Poki Kids</a></li>
+                    <li class="a b"><a class="a" href="">Cookie Statement</a></li>
+                    <li class="a b"><a class="a" href="">FAQ</a></li>
+                </ul>
+            </div>
+            </div>
+                <div class="last"></div>
+                <a class="copyBtn" href="">POKI CLONE-MY CUSTOM PAGE | CLONE V2</a>
+            </div>
+        </footer>
+    </body>
+</html>
