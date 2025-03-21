@@ -1200,7 +1200,7 @@ text{
     .letPoki{
         position: relative;
         width: fit-content;
-        left: 15rem;
+        left: 13rem;
         top: 1rem;
     }
     
@@ -1218,7 +1218,7 @@ text{
     .about{
         position: relative;
         width: fit-content;
-        left: 12rem;
+        left: 11rem;
         bottom: 1rem;
     }
 
@@ -1238,7 +1238,7 @@ text{
         position: relative;
         width: fit-content;
         top: 3rem;
-        left: 28rem;
+        left: 27rem;
         height: 2rem;
     }
     
